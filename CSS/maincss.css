@@ -1,0 +1,23 @@
+body {
+  font-family: "Lucida Grande", Arial, Sans-serif;
+}
+div.profile{
+  padding:10px;
+  border:1px solid red;
+  background-color:lightgreen;
+}
+div.p_image{
+  float: right;
+  padding-top:20px;
+}
+div.text{
+  background-position: 20px,left;
+  padding-right:20px;
+  padding-top: 20px;
+}
+div.list{
+  border:1px solid red;
+  background-color:lightgreen;
+  padding:10px;
+}
+a:hover{color:blue;}
