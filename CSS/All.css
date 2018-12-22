@@ -1,17 +1,18 @@
 p.ltext{
 	padding-right:20%;
 	font-family: Verdana, sans-serif;
-    font-size: 11pt;
-    text-align: center 
+    font-size: 11pt; 
 }
 p.rtext{
 	padding-left:20%; 
 	font-family: Verdana, sans-serif;
     font-size: 11pt;
-    text-align: center
 }
 body{
 	background-image:images/code-9.jpg;
+}
+div.row{
+	padding:10px;
 }
 div.bg{
 	padding: 1px;
@@ -49,7 +50,8 @@ div.desktop{
 div.desktop:hover{
 	transform:scale(1.05);
 	transition-duration:1.5s;
-	transition-delay:0.3s;    
+	transition-delay:0.3s;
+	background: lightblue;    
 }
 img.l:hover{
 	transform:scale(1.1);
