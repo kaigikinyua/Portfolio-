@@ -8,19 +8,53 @@
   <body>
     <div class="barner">
       <ul class="navbar">
-        <li><a href="#">Kinyua Antony Kaigi</a><li>
-        <li><a href="#">Open Source Projects <img height=20px width=20px src="Images/projects.png"/></a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#">Antony Kaigi <img height="20px" width="20px" src="Images/projects.png"/></a>
+          <span class="tooltip">
+            <center><img style="border-radius:50%;" height="50px" width="50px" src="Images/profile.jpg"/><center><br/>
+            <p>Hello Internet People</p>
+          </span>
+        </li>
+        <li>
+          <a href="#">Open Source Projects <img height=20px width=20px src="Images/gears.png"/></a>
+          <span style="left:200px;"class="tooltip">
+              <p>Check out some of the code<br/> projects I have taken on so far</p>
+          </span>
+        </li>
+        <li>
+          <a href="#">Contact <img height=20px width=20px src="Images/contact.png"/></a>
+          <span style="left:300px;" class="tooltip">
+              <p>Click on the 'Contact button'<br/>to leave a message on this site<br/>or reach me via<br/>
+              <ul>
+                <li><img style="border-radius:50%;" height="20px" width"20px" src="Images/Gmail.png">kaigikinyua@gmail.com<li><br/>
+                <li><img style="border-radius:50%;" height="20px" width"20px" src="Images/reddit.png">antony_kaigi<li></br>
+                <li><img style="border-radius:50%;" height="20px" width"20px" src="Images/twitter.png">antony_kaigi<li><br/>
+              </ul>
+            </p>
+          </span>
+        </li>
       </ul>
     </div>
     <div class="bgslider1">
       <div style="background:black;margin-top:50px;">
           <div class="pImage">
-            <img class="profile" height=100px width=100px src="Images/profile.jpg"/>
         </div>
         <div class="pText">
           <center>
-            Converting Coffee Into < code /> since the 90's<br/>
+            <p id="motto" class="motto"> </p><br/>
+            <script>
+                var i=0;
+                var text="Turning coffee into <code/>";
+                function typeEffect(){
+                  if(i<text.length){
+                    document.getElementById("motto").innerHTML+=text.charAt(i);
+                    i++;
+                    setTimeout(typeEffect,70);
+                  }
+                  else console.log(i);
+                }
+                typeEffect();
+            </script>
             <img height="40px" width="40px" style="border-radius:50%;"src="Images/site.jpg"/>
           </center>
         </div>

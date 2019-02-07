@@ -3,6 +3,7 @@ body{
   margin:0;
   background:gray;
 }
+/*barner--------------------------------*/
 div.barner{
   position: fixed;
   background: lightgray;
@@ -10,6 +11,8 @@ div.barner{
   font-family: sans-serif;
   width:100%;
   top:0;
+  height:50px;
+  padding:5px;
 }
 ul.navbar{
   list-style-type: none;
@@ -17,6 +20,19 @@ ul.navbar{
 ul.navbar li{
   padding: 10px;
   display: inline;
+}
+li span.tooltip{
+  visibility: hidden;
+  background-color: whitesmoke;
+  position: absolute;
+  left: 35px;
+  top:100%;
+  padding:2px;
+  border-radius: 5px;
+}
+li:hover span.tooltip{
+  visibility: visible;
+  align-self: center;
 }
 ul.navbar li:hover{
   color:black;
@@ -30,6 +46,7 @@ li a{
   color:black;
   text-decoration: none;
 }
+/*body of webpage----------------------------*/
 div.bgslider1{
   background-image: url('../Images/s1.jpeg');
   background-attachment: fixed;
@@ -56,18 +73,7 @@ div.module:hover{
   opacity:1.0;
   transition: 2s ease-in-out;
 }
-img.profile{
-  border-radius:50%;
-}
-div.pImage{
-  height:150px;
-  width:150px;
-  margin: 20px;
-  display: inline;
-  margin-right:15px;
-  background:black;
-  color:white;
-}
+
 div.pText{
   text-align: center;
   height:100px;
@@ -95,4 +101,16 @@ h4{
 p{
   font-family:monospace;
   font-style: italic;
+}
+p.motto{
+  font-family:inherit;
+  font-size:25;
+  animation-name: colorChange;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+@keyframes colorChange{
+  10%{color:green;}
+  50%{color:red;}
+  100%{color:blue;}
 }
