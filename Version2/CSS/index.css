@@ -22,6 +22,10 @@ ul.navbar li{
   display: inline;
 }
 li span.tooltip{
+  height:200px;
+  width:300px;
+  background: lightblue;
+  color:blue;
   visibility: hidden;
   background-color: whitesmoke;
   position: absolute;
@@ -110,7 +114,10 @@ p.motto{
   animation-delay: 2s;
 }
 @keyframes colorChange{
-  10%{color:green;}
-  50%{color:red;}
+  0%{color:green;}
+  50%{color:red;font-weight: lighter;}
   100%{color:blue;}
+}
+ul.fire{
+  list-style:none;
 }
