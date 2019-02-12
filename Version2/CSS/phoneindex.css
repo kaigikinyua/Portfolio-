@@ -3,12 +3,14 @@ body{
   padding:0;
   margin: 0;
 }
+/*--divs and regions --*/
 div.navbar{
+  visibility: hidden;
   padding:0;
   position: fixed;
   left:0px;
   height:60%;
-  width:30%;
+  width:60%;
   background: lightgray;
   color:black;
 }
@@ -38,10 +40,21 @@ ul.navlist li:hover{
 }
 div.navhide{
   position: fixed;
-  visibility: hidden;
+  visibility: visible;
   background:black;
   border-color: green;
   border-width: 3px;
+}
+div.bgslider{
+  background-image: url('../Images/s1_phone.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  height:100vh;
+}
+div.module{
+  background: gray;
+  width:100%;
+  font-family: fantasy;
 }
 /*---buttons-------*/
 button.cancel{
@@ -66,4 +79,19 @@ button.cancel{
 button.restoreNav{
   border:none;
   background: none;
+}
+/*----text-------------*/
+p.motto{
+  padding: 30px;
+  color:white;
+  font-family:inherit;
+  font-size:25;
+  animation-name: colorChange;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+@keyframes colorChange{
+  0%{color:green;}
+  50%{color:red;font-weight: lighter;}
+  100%{color:blue;}
 }
