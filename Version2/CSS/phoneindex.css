@@ -9,10 +9,10 @@ div.navbar{
   padding:0;
   position: fixed;
   left:0px;
-  height:60%;
-  width:60%;
-  background: lightgray;
-  color:black;
+  height:40%;
+  width:30%;
+  background: gray;
+  color:white;
 }
 ul.navlist{
   margin-top: 30px;
@@ -26,15 +26,15 @@ ul.navlist li{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-li a{
+a li{
   text-decoration: none;
-  color:black;
+  color:white;
 }
-li a:hover{
+a li:hover{
   color:white;
 }
 ul.navlist li:hover{
-  background: black;
+  background:red;
   color:white;
   transform: 1s ease-in-out;
 }
@@ -46,21 +46,27 @@ div.navhide{
   border-width: 3px;
 }
 div.bgslider{
-  background-image: url('../Images/s1_phone.jpeg');
+  background-image: url('../Images/s1.jpeg');
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   height:60vh;
 }
 div.bgslider2{
   background-image: url('../Images/s2.jpg');
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   height:60vh;
 }
 div.module{
-  background: gray;
+  background: black;
+  color:white;
   width:100%;
   font-family: fantasy;
+}
+.module:hover{
+  transition:1s ease-in-out;
 }
 /*---buttons-------*/
 button.cancel{
@@ -122,7 +128,8 @@ p.motto{
 /*---titles---*/
 h4.title{
   padding: 5px;
-  color:white;
+  font-size:25;
+  color:red;
   font-family:fantasy;
   font-weight:lighter;
   text-decoration: underline;
