@@ -6,9 +6,11 @@ body{
 /*barner--------------------------------*/
 div.barner{
   position: fixed;
-  background: lightgray;
-  color:white;
-  font-family: sans-serif;
+  border-bottom: solid red 1px;
+  background:rgba(50,50,50,0.9);
+  background-image: url("../Images/tech.jpg");
+  background-position: center;
+  background-size: cover;
   width:100%;
   top:0;
   height:50px;
@@ -22,32 +24,16 @@ ul.navbar{
   list-style-type: none;
 }
 ul.navbar li{
+  background:whitesmoke;
   border-top:1px solid red;
   border-bottom: 1px solid red;
   margin-left: 5px;
   padding: 10px;
   display: inline;
 }
-li span.tooltip{
-  height:200px;
-  width:300px;
-  background: lightblue;
-  color:blue;
-  visibility: hidden;
-  background-color: whitesmoke;
-  position: absolute;
-  left: 35px;
-  top:100%;
-  padding:2px;
-  border-radius: 5px;
-}
-li:hover span.tooltip{
-  visibility: visible;
-  align-self: center;
-}
 ul.navbar li:hover{
-  color:black;
-  background: white;
+  color:white;
+  background: red;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -63,28 +49,36 @@ div.bgslider1{
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height:75vh;
+  height:70vh;
 }
 div.bgslider2{
-  background-image: url('../Images/s2.jpg');
+  background-image: url('../Images/tech.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height:75vh;
+  height:50vh;
 }
 div.module{
-  background: black;
+  background:rgba(0,0,0,0.9);
   color:white;
   opacity: 0.9;
   width:100%;
   padding:10px;
   font-size: 14px;
   z-index: -1;
+  display: flex;
 }
 div.module:hover{
   background:black;
   opacity:1.0;
   transition: 1s ease-in-out;
+}
+div.gallery{
+  display: inline;
+  float:right;
+  height:50px;
+  width:50px;
+  background:rgba(100,0,0,0.5);
 }
 /*pText is for the typing animation*/
 div.pText{
@@ -105,13 +99,32 @@ div.paragraph{
   padding: 5px;
   border-right: solid 1px red;
 }
-/* span gallery display photos in module*/
-span.gallery{
+/*contact module*/
+div.contactContainer{
+  background-image:url('../Images/engine.jpg');
+  background-size:cover;
+  background-position: center;
+  height:50vh;
+  padding:50px;
+  flex: auto;
+  overflow:hidden;
+}
+div.contactModule{
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
-  height:50%;
   width:50%;
-  background: white;
-  display: inline;
+  left:25%;
+  padding:20px;
+  color:white;
+  border:solid red 1px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+ul.contact{
+  list-style: none;
+  line-height: 50px;
 }
 div.footer{
   font-family: monospace;
@@ -126,6 +139,14 @@ h4{
   text-decoration: underline;
   font-size: 20px;
   color:red;
+}
+p.title{
+  font-family: monospace;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid red;
 }
 p{
   font-family:sans-serif;
