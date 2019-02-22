@@ -37,7 +37,6 @@
                   if(i<=text.length){
                     document.getElementById("motto").innerHTML+=text.charAt(i);
                     i++;
-                    console.log(i);
                   }else if(i>text.length){
                     window.clearInterval();
                   }
@@ -70,7 +69,11 @@
           </p>
         </div>
       </div>
-      <div class="gallery">
+      <div class="gallery" onclick="nextImage();">
+        <img class="ImageSlide" src="Images/Animation/comp1.jpg"/>
+        <img class="ImageSlide" src="Images/Animation/comp3.jpg"/>
+        <img class="ImageSlide" src="Images/Animation/comp2.jpg"/>
+        <script src="JS/imageanim.js"></script>
       </div>
     </div>
     <div class="bgslider2"></div>
@@ -88,6 +91,12 @@
         </p>
       </div>
       </div>
+      <div class="gallery">
+        <img class="ImageSlide" src=""/>
+        <img class="ImageSlide" src=""/>
+        <img class="ImageSlide" src=""/>
+        <img class="ImageSlide" src=""/>
+      </div>
     </div>
     <div class="contactContainer">
       <div class="contactModule">
@@ -99,7 +108,7 @@
         </ul>
       </div>
     </div>
-    <div style="height:80px;"></div>
+    <div style="height:90px;"></div>
     <div class="footer">
       <center><p>You may think the grass is greener on the other side.<br/>
         But if you take time to water your own grass it would be just as<br/> <i style="color:green;">green</i></p>-Henry Ford</center>

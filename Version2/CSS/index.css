@@ -63,7 +63,7 @@ div.module{
   color:white;
   opacity: 0.9;
   width:100%;
-  padding:10px;
+  padding:20px;
   font-size: 14px;
   z-index: -1;
   display: flex;
@@ -74,11 +74,18 @@ div.module:hover{
   transition: 1s ease-in-out;
 }
 div.gallery{
-  display: inline;
+  display: flex;
+  overflow: hidden;
   float:right;
-  height:50px;
-  width:50px;
+  height:75vh;
+  width:45vw;
   background:rgba(100,0,0,0.5);
+}
+img.ImageSlide{
+  display: inline;
+  height:60vh;
+  width:40vw;
+  visibility: hidden;
 }
 /*pText is for the typing animation*/
 div.pText{
