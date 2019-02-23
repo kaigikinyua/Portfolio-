@@ -77,6 +77,7 @@ div.gallery{
   display: flex;
   overflow: hidden;
   float:right;
+  padding: 20px;
   height:75vh;
   width:45vw;
   background:rgba(100,0,0,0.5);
@@ -84,8 +85,8 @@ div.gallery{
 img.ImageSlide{
   display: inline;
   height:60vh;
-  width:40vw;
-  visibility: hidden;
+  width:50vw;
+  display: none;
 }
 /*pText is for the typing animation*/
 div.pText{
