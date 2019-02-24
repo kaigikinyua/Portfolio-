@@ -25,7 +25,4 @@ function previousImage(){
     counter=images.length;
   }
 }
-//nextImage();
-//function previousImage(){}
-//setInterval(nextImage,1000);
-//nextImage();
+setInterval(nextImage,3000);
