@@ -6,7 +6,9 @@ body{
 div.navbar{
   position: fixed;
   z-index: 2;
-  background: gray;
+  background-image: url("../Images/Animation/code.png");
+  background-position: center;
+  background-size: cover;
   width:100%;
   top:0;
   margin-bottom: 50px;
@@ -18,19 +20,19 @@ div.navbar ul a{
   text-decoration: none;
   color:white;
 }
-div.navbar ul li{
+li{
   display: inline;
+  background:rgba(100,100,100,0.7);
   padding: 5px;
   border-right: solid 1px red;
 }
-div.navbar ul li:hover{
-  background-color: black;
-  colo
+div.navbar ul a li:hover{
+  background: rgba(0,0,0,0.5);
 }
-li.active{
+a li.active{
   padding:7px;
   color:white;
-  background: black;
+  background: rgba(255,0,0,0.5);
   border-top-left-radius: 5px;
   border-bottom-left-radius:5px;
   border-top-right-radius: 5px;

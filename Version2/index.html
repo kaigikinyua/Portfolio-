@@ -11,12 +11,8 @@
   <body>
     <div class="barner">
       <ul class="navbar">
-        <li>
-          <a href="#">Antony Kaigi <img height="20px" width="20px" src="Images/projects.png"/></a>
-        </li>
-        <li>
-          <a href="projects.html">Projects <img height=20px width=20px src="Images/gears.png"/></a>
-        </li>
+        <a href="#"><li class="active">Antony Kaigi <img height="20px" width="20px" src="Images/projects.png"/></li></a>
+        <a href="projects.html"><li>Projects <img height=20px width=20px src="Images/gears.png"/></li></a>
         <a href="phoneindex.html" style="text-decoration:none;color:black;">
           <li>
             Phone Mode
@@ -39,8 +35,10 @@
                     i++;
                   }else if(i>text.length){
                     window.clearInterval();
+                    //i=0;
+                    //document.getElementById("motto").innerHTML="";
                   }
-                  setTimeout(typeEffect,70);
+                  setTimeout(typeEffect,70)
                 }
                 typeEffect();
             </script>
@@ -53,12 +51,12 @@
       <div class="speech">
         <h4>Profession</h4>
         <div class="paragraph">
+          <!--should be dynamic  from database to ensure scalability and allow for minimum change-->
         <p>
           Programmer by proffession and Computer Scientist by study.I enjoy creating<br/>
           ambitious code projects to help solve common man problems and also my problems.<br/>
           You can check out some of the 'world changing' :X projects on Open Source Projects<br/>
           or github @ kaigikinyua
-        </p>
             I can work with:
             <ul class="fire">
               <li><img height="20px" width="20px" src="Images/fire.png"/>Python</li>
@@ -68,20 +66,7 @@
             </ul>
           </p>
         </div>
-      </div>
-      <div class="gallery" onclick="nextImage();">
-        <img style="display:block;" class="ImageSlide" src="Images/Animation/comp1.jpg"/>
-        <img class="ImageSlide" src="Images/Animation/comp3.jpg"/>
-        <img class="ImageSlide" src="Images/Animation/comp2.jpg"/>
-        <img class="ImageSlide" src="Images/Animation/comp3.jpg"/>
-        <img class="ImageSlide" src="Images/Animation/comp4.png"/>
-        <img class="ImageSlide" src="Images/Animation/comp5.png"/>
-        <img class="ImageSlide" src="Images/Animation/comp6.png"/>
-        <img class="ImageSlide" src="Images/Animation/comp7.png"/>
-        <span class="arrow right"><img src="Images/right.png"></span>
-        <span class="arrow left"><img src="Images/left.png"></span>
-        <script src="JS/imageanim.js"></script>
-      </div>
+      </div></br/>
     </div>
     <div class="bgslider2"></div>
     <div class="module">
@@ -97,8 +82,6 @@
           a guy to chill and relax
         </p>
       </div>
-      </div>
-      <div class="gallery">
       </div>
     </div>
     <div class="contactContainer">
@@ -117,5 +100,4 @@
         But if you take time to water your own grass it would be just as<br/> <i style="color:green;">green</i></p>-Henry Ford</center>
     <div/>
   </body>
-  http://localhost:35729/livereload.js
 </html>

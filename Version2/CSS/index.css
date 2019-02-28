@@ -8,13 +8,13 @@ div.barner{
   position: fixed;
   border-bottom: solid red 1px;
   background:rgba(50,50,50,0.9);
-  background-image: url("../Images/tech.jpg");
+  background-image: url("../Images/Animation/code.png");
   background-position: center;
   background-size: cover;
   width:100%;
   top:0;
   height:50px;
-  padding:5px;
+  padding:10px;
   overflow: hidden;
   z-index: 1;
   min-width: 600px;
@@ -24,24 +24,28 @@ ul.navbar{
   list-style-type: none;
 }
 ul.navbar li{
-  background:whitesmoke;
+  background:rgba(50,50,50,0.7);
   border-top:1px solid red;
   border-bottom: 1px solid red;
   margin-left: 5px;
   padding: 10px;
+  color:white;
   display: inline;
 }
 ul.navbar li:hover{
   color:white;
-  background: red;
+  background: rgba(255,0,0,0.5);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-li a{
-  color:black;
+a{
+  color:red;
   text-decoration: none;
+}
+a li.active{
+  background: rgba(255,0,0,0.5);
 }
 /*body of webpage----------------------------*/
 div.bgslider1{
@@ -49,7 +53,7 @@ div.bgslider1{
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height:70vh;
+  height:60vh;
 }
 div.bgslider2{
   background-image: url('../Images/tech.jpg');
@@ -63,54 +67,30 @@ div.module{
   color:white;
   opacity: 0.9;
   width:100%;
-  padding:20px;
   font-size: 14px;
   z-index: -1;
-  display: flex;
+  padding: 20px;
 }
 div.module:hover{
   background:black;
   opacity:1.0;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-bottom: 3px solid red;
 }
 div.gallery{
   display: flex;
   overflow: hidden;
   float:right;
-  padding: 20px;
-  height:75vh;
-  width:45vw;
+  padding: 5px;
+  height:20vh;
+  width:25vw;
   background:rgba(100,0,0,0.5);
-
+  cursor: pointer;
 }
-img.ImageSlide{
-  transform: translateX(600px);
-  display: inline;
-  animation: imageEnter;
-  animation-duration: 5s;
-  animation-delay: 0s;
-  height:60vh;
-  width:50vw;
-  display: none;
+div.imageSlide{
+  height: 25px;
+  width:40px;
 }
-@keyframes imageEnter{
-  0%{transform:translateX(-700px);}
-  20%{transform:translateX(100px);}
-
-}
-@keyframes slide{
-  0%{opacity: 0.9;}
-  10%{opacity: 0.85;}
-  20%{opacity: 0.80;}
-  30%{opacity: 0.75;}
-  40%{opacity: 0.7;}
-  50%{opacity: 0.65;}
-  60%{opacity: 0.5;}
-  70%{opacity: 0.55;}
-  80%{opacity: 0.5;}
-  90%{opacity: 0.45;visibility: hidden;}
-}
-/*pText is for the typing animation*/
 div.pText{
   height:100px;
   width:50%;
@@ -121,13 +101,14 @@ div.pText{
 }
 /*div speech text based inside module for my speech*/
 div.speech{
-  width:50%;
-  min-width: 500px;
+  width:80%;
+  min-width: 400px;
+  max-width: 100%;
 }
 /*div paragraph for the text in speech excluding the title*/
 div.paragraph{
   padding: 5px;
-  border-right: solid 1px red;
+  border-top: solid 1px red;
 }
 /*contact module*/
 div.contactContainer{
