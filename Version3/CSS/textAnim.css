@@ -1,0 +1,23 @@
+.typeEffect{
+    font-family:'Franklin Gothic Medium';
+    animation-name:colorFull;
+    animation-duration: 5s;
+    animation-delay: 4s;
+}
+@keyframes colorFull{
+    20%{
+        color:rgb(50,50,250);
+    }
+    40%{
+        color:black;
+        text-transform: lowercase;
+    }
+    60%{
+        color:rgb(50,50,250);
+        text-transform: capitalize;
+    }
+    80%{
+        color:black;
+        text-transform: capitalize;
+    }
+}
