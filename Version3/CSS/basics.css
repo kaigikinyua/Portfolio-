@@ -4,17 +4,20 @@ body{
 }
 .navbar{
     position:fixed;
-    background: rgba(50,50,250,0.8);
+    background: rgba(50,50,150,0.4);
     width:100%;
     padding:10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     z-index: 2;
+    border-bottom:1px solid rgb(50,50,250);
 }
 ul.nav{
     list-style-type: none;
 }
 a li{
+    color:rgb(50,50,250);
+    border:1px solid rgb(50,50,250);
     display: inline-block;
     background: #fff;
     padding:5px;
@@ -26,8 +29,9 @@ a li{
 }
 a li:hover{
     transform: translateY(-5px);
-    background:whitesmoke;
+    background:rgba(50,50,250,0.8);
     transition:0.5s;
+    color:white;
 }
 a li.active{
     color:white;
@@ -126,12 +130,13 @@ div.foundation{
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
 }
 .floor{
     position: relative;
     background:none;
-    display: flex;
+    display:inline-flex;
+    width:100%;
+    overflow: hidden;
 }
 div.tile{
     margin-left: 10px;
@@ -139,11 +144,24 @@ div.tile{
     color:black;
     font-family: cursive;
     padding:10px;
-    width:60%;
+    width:65%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+div.gallery{
+    position: relative;
+    margin-left: 20px;
+    padding:5px;
+    overflow:hidden;
+    width:40%;
+    display: inline-flex;
+}
+img.sImage{
+  height:50%;
+  width:50%;
+  display: inline-block;
 }
 h3.title{
     color:#fff;
@@ -179,6 +197,25 @@ img.pImage{
 @media only screen and (max-width:500px){
   div.tile{
     width:90%;
+  }
+}
+@media only screen and (min-width:1000px){
+  div.gallery{
+    width:30%;
+    height:100%;
+  }
+  img.sImage{
+    height:200px;
+    width:200px;
+  }
+  div.tile{
+    height:200px;
+  }
+  div.foundation{
+    height:250px;
+  }
+  .floor{
+    height:230px;
   }
 }
 div.contact{

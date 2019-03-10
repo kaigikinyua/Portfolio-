@@ -4,7 +4,7 @@ div.loginForm{
   left:50%;
   top:50%;
   transform:translate(-50%,-50%);
-  background:rgba(50,50,50,0.7);
+  background:rgba(50,50,150,0.4);
   padding:10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -19,11 +19,11 @@ input{
   margin-bottom: 20px;
   border:none;
   border-bottom: 1px solid rgba(50,50,250);
-  display: block;
   padding:10px;
+  display: inline;
 }
 input:hover {
-  width:90%;
+  width:80%;
   transition: 1s;
   color:white;
 }
@@ -38,4 +38,10 @@ input.btn{
 }
 input.btn:hover{
   background: rgba(50,50,250,0.6);
+}
+img.formIcon{
+  border-radius: 50%;
+  display: inline;
+}
+div.field{
 }
