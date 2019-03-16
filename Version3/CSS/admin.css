@@ -1,0 +1,13 @@
+body{
+  background-image:url("../Images/s1.jpeg");
+  background-repeat:no-repeat;
+  background-position:center;
+}
+@media only screen and (max-width:500px){
+  body{
+    background-image:url("../Images/s1_p.jpeg");
+  }
+  img.formIcon{
+    display: none;
+  }
+}
