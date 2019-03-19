@@ -27,5 +27,28 @@
       <script type="text/javascript" src="JS/admin.js"></script>
     </center>
     </div>
+    <!---->
+    <!-- add a new project -->
+    <div style="height:170px;"></div>
+    <div class="module">
+      <form method="POST" action="PHP/upload.php" enctype="multipart/form-data">
+        <input type="text" name="title" placeholder="Title" required /><br/>
+        <input type="file" name="icon" required/><br/>
+        <textarea rows="5" cols="40" name="description" placeholder="Project Description" required></textarea>
+        <input class="submit" type="submit" name="submit" value="UPLOAD"/>
+      </form>
+    </div>
+
+    <!--View Messages-->
+    <div class="module">
+      <!--php for loop to display username and message maybe reply button-->
+    </div>
+
+    <!-- edit portfolio description,professional background,skill set,about me-->
+    <div class="module">
+      <!-- drop down to select the section-->
+      <!-- textarea to edit the portfolio section-->
+    </div>
+
   </body>
 </html>
