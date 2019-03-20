@@ -34,31 +34,58 @@
     <div style="height:100px"></div>
     <!--encased in for loop-->
 
+    <?php
+      include('PHP/db.php');
+      $sql="select * from projects";
+      $result=mysqli_query($con,$sql);
+      if($result){
+          if(mysqli_num_rows($result)>0){
+            while($values=mysqli_fetch_array($result)){
+              echo "<div class='project'>
+                      <h3 class='title'>".$values[0]."</h3>
+                      <div class='tile'>
+                        <div class='pImage'>
+                          <img class='projectImage' src='".$values['icon']."'/>
+                          <!--add buttons here-->
+                          </div>
+                          <div class='pDesc'>
+                          <p class='pDesc'>".$values['description']."</p>
+                        </div>
+                      </div>
+                    </div>";
+            }
+          }else{
+            //echo tonny has not added any project yet
+            echo mysqli_error($result);
+          }
+        }
+    ?>
+    <!--
     <div class="project">
       <h3 class="pTitle">
         Project one
-        <!--refer to database Profile field project names-->
+        <!--refer to database Profile field project names
       </h3>
       <div class="tile">
         <div class="pImage">
-          <!--refer to Profile database field project image to get the filename and append to PHP/PImages-->
+          <!--refer to Profile database field project image to get the filename and append to PHP/PImages
           <img class="projectImage" src="Images/Gmail.png"/>
           <div class="btn-grp">
-          <!--download src from PHP/Projects : button -->
+          <!--download src from PHP/Projects : button
             <button class="src"><img class="icon" src="Images/download.png"/></button>
             <button class="src"><img class="icon" src="Images/view.jpg"/></button>
-          <!--view source reffer to github repo:button-->
+          <!--view source reffer to github repo:button
           </div>
         </div>
         <div class="pDesc">
           <p class="pDesc">
             Test For the project distribution and description page
-            <!---refer to database Profile table projects field projectDesc-->
+            <!---refer to database Profile table projects field projectDesc->
           </p>
         </div>
       </div>
     </div>
-
+  -->
 
   </body>
 </html>

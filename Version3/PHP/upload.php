@@ -10,11 +10,11 @@
       //checkfile size and extensions
       $filepath='../Uploads/Projects/'.basename($file);
       if(file_exists($filepath)){
-        $filepath='Uploads/Projects/'.$title."_".basename($file);
+        $filepath='../Uploads/Projects/'.$title."_".basename($file);
       }
-
+      $fileLocation='Uploads/Projects/'.basename($file);
       include('db.php');
-      $sql="INSERT INTO projects(title,description,icon,likes) VALUES('$title','$description','$filepath',1)";
+      $sql="INSERT INTO projects(title,description,icon,likes) VALUES('$title','$description','$fileLocation',1)";
       //$sql="INSERT INTO projects(title,description,icon,likes) VALUES($title,$description,$filepath,5)";
       $result=mysqli_query($con,$sql);
       if($result){
