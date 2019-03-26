@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Antony</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'elements.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'barner.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'profiles.css' %}">
+</head>
+<body>
+	<div class="navbar">
+		<ul class="navbar">
+			<a href="#"><li class="active">Home</li></a>
+			<a href="projects.html"><li>Projects</li></a>
+			<a href="reviews.html"><li>Review</li></a>
+			<a href="admin"><li>Admin</li></a>
+		</ul>
+	</div>
+	<div style="height:50px"></div>
+	<div class="container">
+		<div class="aboutme">
+			Hi ! I am Antony
+		</div>
+		<div class="barner">
+			<h3 class="barner" id="motto"></h3>
+		<script type="text/javascript" src="{% static 'JS/textanim.js'%}"></script>
+	</div>
+	</div>
+	<div class="tail">
+		Hello World
+	</div>
+</body>
+</html>
