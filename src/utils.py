@@ -3,6 +3,18 @@ Utility functions to be used by the scripts to manage various resources
 and keep the scripts consistent
 """
 import json,requests,os,random
+class CleanUI:
+    @staticmethod
+    def cleanInput(data):
+        pass
+
+class DataBase:
+    def __init__(self):
+        pass
+    
+    def runQuery(self):
+        pass
+
 class JsonFile:
     @staticmethod
     def loadData(filepath):
